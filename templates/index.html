@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Classifier</title>
+</head>
+<body>
+    <h1>Resume Classifier</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="resume">Upload your resume (PDF only):</label>
+        <input type="file" name="resume" id="resume">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    {% if category %}
+        <p>The predicted category is: {{ category }}</p>
+    {% endif %}
+</body>
+</html>
